@@ -5,19 +5,16 @@
   
   <title>MeasureSpec源码 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="MeasureSpec源码在看View源码时，经常会遇到MeasureSpec这个类，它一层层从parent传向childview，不去了解，还真不知道他是个啥，源码如下：
-12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061">
+  <meta name="description" content="MeasureSpec源码分析">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MeasureSpec源码">
 <meta property="og:url" content="http://yoursite.com/2015/10/02/MeasureSpec源码/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="MeasureSpec源码在看View源码时，经常会遇到MeasureSpec这个类，它一层层从parent传向childview，不去了解，还真不知道他是个啥，源码如下：
-12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061">
-<meta property="og:updated_time" content="2015-10-02T11:18:49.000Z">
+<meta property="og:description" content="MeasureSpec源码分析">
+<meta property="og:updated_time" content="2015-10-02T11:42:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MeasureSpec源码">
-<meta name="twitter:description" content="MeasureSpec源码在看View源码时，经常会遇到MeasureSpec这个类，它一层层从parent传向childview，不去了解，还真不知道他是个啥，源码如下：
-12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061">
+<meta name="twitter:description" content="MeasureSpec源码分析">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -112,7 +109,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/android/" style="font-size: 10px;">android</a>
+						<a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/源码分析/" style="font-size: 10px;">源码分析</a>
 					</div>
 				</section>
 				
@@ -212,10 +209,14 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/源码分析/">源码分析</a></li></ul>
 	</div>
 
         
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Android/">Android</a>
+	</div>
+
 
         <div class="clearfix"></div>
       </div>
@@ -254,16 +255,6 @@
   </div>
   
     
-<nav id="article-nav">
-  
-  
-    <a href="/2015/10/02/Hello-Hexo/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello Hexo</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
-  
-</nav>
-
   
 </article>
 
