@@ -178,10 +178,72 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-MeasureSpec源码" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-getChildMeasureSpec源码分析" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/09/20/MeasureSpec源码/" class="article-date">
+      <a href="/2015/10/02/getChildMeasureSpec源码分析/" class="article-date">
+  	<time datetime="2015-10-02T15:35:22.000Z" itemprop="datePublished">2015-10-02</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/02/getChildMeasureSpec源码分析/">getChildMeasureSpec源码分析</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>我们知道<code>子View</code>的宽高是由<code>父View</code>决定的，这就是为什么在<code>xml</code>写布局的时候，我们设置<code>View</code>的宽高是<code>layout_width</code>而不是直接<code>width</code>。<code>父View</code>的属性会传向<code>子View</code>，从中去影响<code>子View</code>的宽高，现在我们就来看看源码中，他是怎么运作起来的。</p>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/View/">View</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/源码分析/">源码分析</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/Android/">Android</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/10/02/getChildMeasureSpec源码分析/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-MeasureSpec源码分析" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/09/20/MeasureSpec源码分析/" class="article-date">
   	<time datetime="2015-09-20T09:38:17.000Z" itemprop="datePublished">2015-09-20</time>
 </a>
     </div>
@@ -195,7 +257,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/09/20/MeasureSpec源码/">MeasureSpec源码</a>
+      <a class="article-title" href="/2015/09/20/MeasureSpec源码分析/">MeasureSpec源码分析</a>
     </h1>
   
 
@@ -223,7 +285,7 @@
 
       
         <p class="article-more-link">
-          <a  href="/2015/09/20/MeasureSpec源码/#more">more >></a>
+          <a  href="/2015/09/20/MeasureSpec源码分析/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
