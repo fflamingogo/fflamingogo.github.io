@@ -4,7 +4,7 @@
   <subtitle><![CDATA[the wind of freedom blows]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="fflamingogo.xyz/"/>
-  <updated>2015-10-03T05:20:43.000Z</updated>
+  <updated>2015-10-03T10:13:07.000Z</updated>
   <id>fflamingogo.xyz/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="fflamingogo.xyz/2015/10/02/getChildMeasureSpec%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/"/>
     <id>fflamingogo.xyz/2015/10/02/getChildMeasureSpec源码分析/</id>
     <published>2015-10-02T15:35:22.000Z</published>
-    <updated>2015-10-03T05:20:43.000Z</updated>
+    <updated>2015-10-03T10:13:07.000Z</updated>
     <content type="html"><![CDATA[<p>我们知道<code>子View</code>的宽高是由<code>父View</code>决定的，这就是为什么在<code>xml</code>写布局的时候，我们设置<code>View</code>的宽高是<code>layout_width</code>而不是直接<code>width</code>。<code>父View</code>的属性会传向<code>子View</code>，从中去影响<code>子View</code>的宽高，现在我们就来看看源码中，他是怎么运作起来的。</p>
 <a id="more"></a>
 <p><code>父View</code>就是我们熟悉的<code>ViewGroup</code>来充当，在<code>ViewGroup</code>的源码中，发现了<code>measureChildren</code>这个方法，从名字我们就能判断它是用来测量<code>子View</code>的宽高的，源码如下：</p>
@@ -39,6 +39,8 @@
 <p>当<code>父View</code>的<code>Mode</code>为<code>EXACTLY</code>，<code>子View</code>为<code>MATCH_PARENT</code>，也就是和<code>父View</code>一样的<code>Size</code>，并且固定了。<code>子View</code>为<code>WRAP_CONTENT</code>，它的大小由自己决定，但是<code>Size</code>最大等于<code>父View</code>，<code>Mode</code>是<code>AT_MOST</code>。</p>
 <p>当<code>父View</code>的<code>Mode</code>为<code>AT_MOST</code>，<code>子View</code>为<code>MATCH_PARENT</code>，想要和<code>父View</code>一样的<code>Size</code>，但是<code>父View</code>并没有固定，所以大小还是自己决定，但不能超过<code>父View</code>的大小。</p>
 <p>最后调用<code>MeasureSpec.makeMeasureSpec</code>生成<code>子View</code>的<code>MeasureSpec</code>返回。</p>
+<p><img src="https://raw.githubusercontent.com/fflamingogo/fflamingogo.github.io/master/myimage/wx.jpg" width="300" height="300" alt="图片名称" align="center/"></p>
+<p><img src="https://raw.githubusercontent.com/fflamingogo/fflamingogo.github.io/master/myimage/%E6%94%AF%E4%BB%98%E5%AE%9D.jpg" width="300" height="300" alt="图片名称" align="center/"></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>我们知道<code>子View</code>的宽高是由<code>父View</code>决定的，这就是为什么在<code>xml</code>写布局的时候，我们设置<code>View</code>的宽高是<code>layout_width</code>而不是直接<code>width</code>。<code>父View</code>的属性会传向<code>子View</code>，从中去影响<code>子View</code>的宽高，现在我们就来看看源码中，他是怎么运作起来的。</p>]]>

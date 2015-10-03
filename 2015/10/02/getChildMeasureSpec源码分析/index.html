@@ -11,7 +11,9 @@
 <meta property="og:url" content="fflamingogo.xyz/2015/10/02/getChildMeasureSpec源码分析/index.html">
 <meta property="og:site_name" content="fflamingogo blog">
 <meta property="og:description" content="我们知道子View的宽高是由父View决定的，这就是为什么在xml写布局的时候，我们设置View的宽高是layout_width而不是直接width。父View的属性会传向子View，从中去影响子View的宽高，现在我们就来看看源码中，他是怎么运作起来的。">
-<meta property="og:updated_time" content="2015-10-03T05:20:43.000Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/fflamingogo/fflamingogo.github.io/master/myimage/wx.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/fflamingogo/fflamingogo.github.io/master/myimage/%E6%94%AF%E4%BB%98%E5%AE%9D.jpg">
+<meta property="og:updated_time" content="2015-10-03T10:13:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="getChildMeasureSpec源码分析">
 <meta name="twitter:description" content="我们知道子View的宽高是由父View决定的，这就是为什么在xml写布局的时候，我们设置View的宽高是layout_width而不是直接width。父View的属性会传向子View，从中去影响子View的宽高，现在我们就来看看源码中，他是怎么运作起来的。">
@@ -237,6 +239,8 @@
 <p>当<code>父View</code>的<code>Mode</code>为<code>EXACTLY</code>，<code>子View</code>为<code>MATCH_PARENT</code>，也就是和<code>父View</code>一样的<code>Size</code>，并且固定了。<code>子View</code>为<code>WRAP_CONTENT</code>，它的大小由自己决定，但是<code>Size</code>最大等于<code>父View</code>，<code>Mode</code>是<code>AT_MOST</code>。</p>
 <p>当<code>父View</code>的<code>Mode</code>为<code>AT_MOST</code>，<code>子View</code>为<code>MATCH_PARENT</code>，想要和<code>父View</code>一样的<code>Size</code>，但是<code>父View</code>并没有固定，所以大小还是自己决定，但不能超过<code>父View</code>的大小。</p>
 <p>最后调用<code>MeasureSpec.makeMeasureSpec</code>生成<code>子View</code>的<code>MeasureSpec</code>返回。</p>
+<p><img src="https://raw.githubusercontent.com/fflamingogo/fflamingogo.github.io/master/myimage/wx.jpg" width="300" height="300" alt="图片名称" align="center/"></p>
+<p><img src="https://raw.githubusercontent.com/fflamingogo/fflamingogo.github.io/master/myimage/%E6%94%AF%E4%BB%98%E5%AE%9D.jpg" width="300" height="300" alt="图片名称" align="center/"></p>
 
       
     </div>
