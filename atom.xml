@@ -4,7 +4,7 @@
   <subtitle><![CDATA[the wind of freedom blows]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="fflamingogo.xyz/"/>
-  <updated>2015-11-16T13:01:41.000Z</updated>
+  <updated>2015-11-16T14:32:26.000Z</updated>
   <id>fflamingogo.xyz/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="fflamingogo.xyz/2015/11/09/Android%E5%BC%80%E5%8F%91%E5%BF%85%E5%A4%87vps-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     <id>fflamingogo.xyz/2015/11/09/Android开发必备vps-科学上网/</id>
     <published>2015-11-09T14:44:14.000Z</published>
-    <updated>2015-11-16T13:01:41.000Z</updated>
+    <updated>2015-11-16T14:32:26.000Z</updated>
     <content type="html"><![CDATA[<p>作为Android开发工程师，你是不是有以下的经历：</p>
 <ul>
 <li>无法访问谷歌</li>
@@ -53,6 +53,9 @@
 <p>sudo ssserver -p 443 -k password -m rc4-md5 –user nobody -d start</p>
 </blockquote>
 <p>接着我们要让我们的shadowsocks在vps的后台跑起来，要执行<code>sudo ssserver -p 443 -k password -m rc4-md5 --user nobody -d start</code>，<strong>注意</strong>password是你要设定的密码，443为端口号，rc4-md5为加密方式，除了密码，其余的都可以不用改，出现如下信息为成功开启。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/9.png?raw=true" width="1000" height="500/"></p>
+<p>#设置客户端</p>
+<p>###windows系统<br><a href="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/Shadowsocks-win-2.5.6.zip?raw=true" target="_blank" rel="external">windows客户端</a><br>点击打开客户端，输入我们搭建shadowsocks时输入的参数，包括vps的ip、端口号<code>443</code>、密码，加密方式<code>rc4-md5</code>，代理端口为<code>1080</code>不用改。如果你全部按照我的教程来的话，只有你自己设置的密码才需要和我不一样。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/16.png?raw=true" width="1000" height="500/"><br>接着右键屏幕右下角shadowsocks客户端的小图标，点击<code>启用系统代理</code>，现在我们在浏览器用谷歌搜索，已经能用了！不够我们还需要设置一些东西，访问我们国内的网站，就不必经过shadowsocks了，所以我们右键小图标，在<code>系统代理模式</code>中选择<code>PAC模式</code>，在<code>PAC</code>中选择<code>使用本地PAC</code>并点击<code>从GFWList更新本地PAC</code>，现在，我们就能愉快的上谷歌了！</p>
+<p>###mac系统<br><a href="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/ShadowsocksX-2.6.3.dmg?raw=true" target="_blank" rel="external">mac客户端</a><br>点击打开客户端，点击右上角shadowsocks，在服务器中打开服务器设定，输入我们搭建shadowsocks时输入的参数，包括vps的ip、端口号<code>443</code>、密码，加密方式<code>rc4-md5</code>。如果你全部按照我的教程来的话，只有你自己设置的密码才需要和我不一样。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/17.png?raw=true" width="1000" height="500/"><br>选择<code>自动代理模式</code>，点击<code>从GFWList更新本地PAC</code>然后<code>打开shadowsocks</code>，完成设置。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>作为Android开发工程师，你是不是有以下的经历：</p>
