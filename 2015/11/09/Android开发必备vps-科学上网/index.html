@@ -33,7 +33,10 @@ Android studio更新各种失败
 <meta property="og:image" content="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/4.png?raw=true">
 <meta property="og:image" content="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/5.png?raw=true">
 <meta property="og:image" content="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/6.png?raw=true">
-<meta property="og:updated_time" content="2015-11-16T12:09:58.000Z">
+<meta property="og:image" content="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/7.png?raw=true">
+<meta property="og:image" content="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/8.png?raw=true">
+<meta property="og:image" content="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/9.png?raw=true">
+<meta property="og:updated_time" content="2015-11-16T12:35:54.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android开发必备vps 科学上网">
 <meta name="twitter:description" content="作为Android开发工程师，你是不是有以下的经历：
@@ -262,11 +265,15 @@ Android studio更新各种失败
 <blockquote>
 <p>apt-get install python-pip</p>
 </blockquote>
-<p>pip是一个以Python计算机程序语言写成的软件包管理系统，他可以安装和管理软件包。之后我们下载安装东西就方便了。</p>
+<p>pip是一个以Python计算机程序语言写成的软件包管理系统，他可以安装和管理软件包。之后我们下载安装东西就方便了。<br>现在，我们执行这个命令，终端刷刷刷的开始下载，中间会询问你，输入yes后继续。但是最后出现了个失败的信息，如下图：<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/7.png?raw=true" width="1000" height="500/"><br>他要求我们执行<code>apt-get update</code>，输入后回车，完成更新后，再次执行<code>apt-get install python-pip</code>，这次很顺利的完成了安装。</p>
 <blockquote>
 <p>pip install shadowsocks</p>
+</blockquote>
+<p>接着我们用pip来安装shadowsocks，执行<code>pip install shadowsocks</code>，出现如下信息，代表我们成功安装了shadowsocks。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/8.png?raw=true" width="1000" height="500/"></p>
+<blockquote>
 <p>sudo ssserver -p 443 -k password -m rc4-md5 –user nobody -d start</p>
 </blockquote>
+<p>接着我们要让我们的shadowsocks在vps的后台跑起来，要执行<code>sudo ssserver -p 443 -k password -m rc4-md5 --user nobody -d start</code>，<strong>注意</strong>password是你要设定的密码，443为端口号，rc4-md5为加密方式，除了密码，其余的都可以不用改，出现如下信息为成功开启。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/9.png?raw=true" width="1000" height="500/"></p>
 
       
     </div>
