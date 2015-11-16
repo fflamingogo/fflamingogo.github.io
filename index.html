@@ -224,7 +224,7 @@
 <p><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/15.png?raw=true" width="1000" height="300/"></p>
 <p>###mac系统<br>舍得花钱买mac开发的，代表你对技术的重视，配置了<code>ssh-key</code>这些就不说了，不配置也可以，只是要输入账号<code>root</code>和之前设置的<code>root密码</code>。<br>输入<code>ssh root@133.130.108.22</code>(你输入你vps的ip)，出现如下界面表示成功连接。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/10.png?raw=true" width="1000" height="700/"></p>
 <p>#搭建shadowsocks</p>
-<p><a href="https://github.com/shadowsocks/shadowsocks/wiki/Shadowsocks-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E" target="_blank" rel="external">作者教程</a></p>
+<p>首先我们应该感谢shadowsocks的作者。<br><a href="https://github.com/shadowsocks/shadowsocks/wiki/Shadowsocks-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E" target="_blank" rel="external">作者教程</a></p>
 <blockquote>
 <p>apt-get install python-pip</p>
 </blockquote>
@@ -238,8 +238,13 @@
 </blockquote>
 <p>接着我们要让我们的shadowsocks在vps的后台跑起来，要执行<code>sudo ssserver -p 443 -k password -m rc4-md5 --user nobody -d start</code>，<strong>注意</strong>password是你要设定的密码，443为端口号，rc4-md5为加密方式，除了密码，其余的都可以不用改，出现如下信息为成功开启。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/9.png?raw=true" width="1000" height="500/"></p>
 <p>#设置客户端</p>
-<p>###windows系统<br><a href="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/Shadowsocks-win-2.5.6.zip?raw=true" target="_blank" rel="external">windows客户端</a><br>点击打开客户端，输入我们搭建shadowsocks时输入的参数，包括vps的ip、端口号<code>443</code>、密码，加密方式<code>rc4-md5</code>，代理端口为<code>1080</code>不用改。如果你全部按照我的教程来的话，只有你自己设置的密码才需要和我不一样。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/16.png?raw=true" width="1000" height="500/"><br>接着右键屏幕右下角shadowsocks客户端的小图标，点击<code>启用系统代理</code>，现在我们在浏览器用谷歌搜索，已经能用了！不够我们还需要设置一些东西，访问我们国内的网站，就不必经过shadowsocks了，所以我们右键小图标，在<code>系统代理模式</code>中选择<code>PAC模式</code>，在<code>PAC</code>中选择<code>使用本地PAC</code>并点击<code>从GFWList更新本地PAC</code>，现在，我们就能愉快的上谷歌了！</p>
-<p>###mac系统<br><a href="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/ShadowsocksX-2.6.3.dmg?raw=true" target="_blank" rel="external">mac客户端</a><br>点击打开客户端，点击右上角shadowsocks，在服务器中打开服务器设定，输入我们搭建shadowsocks时输入的参数，包括vps的ip、端口号<code>443</code>、密码，加密方式<code>rc4-md5</code>。如果你全部按照我的教程来的话，只有你自己设置的密码才需要和我不一样。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/17.png?raw=true" width="1000" height="500/"><br>选择<code>自动代理模式</code>，点击<code>从GFWList更新本地PAC</code>然后<code>打开shadowsocks</code>，完成设置。</p>
+<p>###windows系统<br><a href="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/Shadowsocks-win-2.5.6.zip?raw=true" target="_blank" rel="external">windows客户端</a></p>
+<p>点击打开客户端，输入我们搭建shadowsocks时输入的参数，包括vps的ip、端口号<code>443</code>、密码，加密方式<code>rc4-md5</code>，代理端口为<code>1080</code>不用改。如果你全部按照我的教程来的话，只有你自己设置的密码才需要和我不一样。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/16.png?raw=true" width="1000" height="400/"><br>接着右键屏幕右下角shadowsocks客户端的小图标，点击<code>启用系统代理</code>，现在我们在浏览器用谷歌搜索，已经能用了！不够我们还需要设置一些东西，访问我们国内的网站，就不必经过shadowsocks了，所以我们右键小图标，在<code>系统代理模式</code>中选择<code>PAC模式</code>，在<code>PAC</code>中选择<code>使用本地PAC</code>并点击<code>从GFWList更新本地PAC</code>，现在，我们就能愉快的上谷歌了！</p>
+<p>###mac系统<br><a href="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/ShadowsocksX-2.6.3.dmg?raw=true" target="_blank" rel="external">mac客户端</a><br>点击打开客户端，点击右上角shadowsocks，在服务器中打开服务器设定，输入我们搭建shadowsocks时输入的参数，包括vps的ip、端口号<code>443</code>、密码，加密方式<code>rc4-md5</code>。如果你全部按照我的教程来的话，只有你自己设置的密码才需要和我不一样。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/17.png?raw=true" width="1000" height="400/"><br>选择<code>自动代理模式</code>，点击<code>从GFWList更新本地PAC</code>然后<code>打开shadowsocks</code>，完成设置。</p>
+<p>#总结</p>
+<p>恭喜你，通过以上的步骤，你已经搭建起了通往世界的大门，如果觉得我的教程帮助了你，你可以拿起你的手机扫一扫二维码。</p>
+<p><img src="https://raw.githubusercontent.com/fflamingogo/fflamingogo.github.io/master/myimage/wx.jpg" width="300" height="300" alt="图片名称" align="center/"></p>
+<p><img src="https://raw.githubusercontent.com/fflamingogo/fflamingogo.github.io/master/myimage/%E6%94%AF%E4%BB%98%E5%AE%9D.jpg" width="300" height="300" alt="图片名称" align="center/"></p>
 
       
     </div>
