@@ -4,7 +4,7 @@
   <subtitle><![CDATA[the wind of freedom blows]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="fflamingogo.xyz/"/>
-  <updated>2015-11-16T14:45:40.000Z</updated>
+  <updated>2015-11-16T14:46:33.000Z</updated>
   <id>fflamingogo.xyz/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="fflamingogo.xyz/2015/11/09/Android%E5%BC%80%E5%8F%91%E5%BF%85%E5%A4%87vps-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     <id>fflamingogo.xyz/2015/11/09/Android开发必备vps-科学上网/</id>
     <published>2015-11-09T14:44:14.000Z</published>
-    <updated>2015-11-16T14:45:40.000Z</updated>
+    <updated>2015-11-16T14:46:33.000Z</updated>
     <content type="html"><![CDATA[<p>作为Android开发工程师，你是不是有以下的经历：</p>
 <ul>
 <li>无法访问谷歌</li>
@@ -28,6 +28,7 @@
 <li>导入谷歌的库各种失败</li>
 </ul>
 <p>一切原因都是你身处大局域网中，你可能通过某种方法，暂时解决了以上的问题，但是还是很不顺心，这里，我不单要帮你解决以上的问题，还要带你看看世界。</p>
+<a id="more"></a>
 <p>#购买vps<br>虚拟专用服务器（英语：Virtual private server，缩写为 VPS），是指通过虚拟化技术在独立服务器中运行的专用服务器。每个使用VPS技术的虚拟独立服务器拥有各自独立的公网IP地址、操作系统、硬盘空间、内存空间、CPU资源等，还可以进行安装程序、重启服务器等操作，与运行一台独立服务器完全相同。</p>
 <p>在vps上，我们不仅能实现科学上网，还能搭建自己的个人博客、搭建自己私人的git服务器，逼格很高有木有？还有很多功能等待我们去发掘，我将在之后的博客中介绍。因此我们应该挑选一个性能良好的vps，经过我试验后，我认为conoha是个不错的选择，支持中文、有东京机房、延迟低、1g内存、可以支付宝支付，最重要的是每个月只需900日元（折合人民币47元），很适合国内的Android开发工程师使用。</p>
 <p><a href="https://www.conoha.jp/referral/?token=3WIDFgxrG6MsHRBJ7V_EI4GqOsP4UzCf.4cY9isnERXyDas77FQ-9LZ" target="_blank" rel="external">购买vps地址</a><br>点击右上角申请注册等步骤，这些谁都会的就不介绍了，但是要注意，密码貌似需要有<strong>标点符号！！！</strong></p>
@@ -70,7 +71,8 @@
 <li>Android studio更新各种失败</li>
 <li>导入谷歌的库各种失败</li>
 </ul>
-<p>一切原]]>
+<p>一切原因都是你身处大局域网中，你可能通过某种方法，暂时解决了以上的问题，但是还是很不顺心，这里，我不单要帮你解决以上的问题，还要带你看看世界。</p>]]>
+    
     </summary>
     
   </entry>
