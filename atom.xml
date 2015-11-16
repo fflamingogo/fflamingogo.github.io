@@ -4,7 +4,7 @@
   <subtitle><![CDATA[the wind of freedom blows]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="fflamingogo.xyz/"/>
-  <updated>2015-11-16T14:46:33.000Z</updated>
+  <updated>2015-10-03T10:13:07.000Z</updated>
   <id>fflamingogo.xyz/</id>
   
   <author>
@@ -13,69 +13,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title><![CDATA[Android开发必备vps 科学上网]]></title>
-    <link href="fflamingogo.xyz/2015/11/09/Android%E5%BC%80%E5%8F%91%E5%BF%85%E5%A4%87vps-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    <id>fflamingogo.xyz/2015/11/09/Android开发必备vps-科学上网/</id>
-    <published>2015-11-09T14:44:14.000Z</published>
-    <updated>2015-11-16T14:46:33.000Z</updated>
-    <content type="html"><![CDATA[<p>作为Android开发工程师，你是不是有以下的经历：</p>
-<ul>
-<li>无法访问谷歌</li>
-<li>无法访问Android官网</li>
-<li>Android studio更新各种失败</li>
-<li>导入谷歌的库各种失败</li>
-</ul>
-<p>一切原因都是你身处大局域网中，你可能通过某种方法，暂时解决了以上的问题，但是还是很不顺心，这里，我不单要帮你解决以上的问题，还要带你看看世界。</p>
-<a id="more"></a>
-<p>#购买vps<br>虚拟专用服务器（英语：Virtual private server，缩写为 VPS），是指通过虚拟化技术在独立服务器中运行的专用服务器。每个使用VPS技术的虚拟独立服务器拥有各自独立的公网IP地址、操作系统、硬盘空间、内存空间、CPU资源等，还可以进行安装程序、重启服务器等操作，与运行一台独立服务器完全相同。</p>
-<p>在vps上，我们不仅能实现科学上网，还能搭建自己的个人博客、搭建自己私人的git服务器，逼格很高有木有？还有很多功能等待我们去发掘，我将在之后的博客中介绍。因此我们应该挑选一个性能良好的vps，经过我试验后，我认为conoha是个不错的选择，支持中文、有东京机房、延迟低、1g内存、可以支付宝支付，最重要的是每个月只需900日元（折合人民币47元），很适合国内的Android开发工程师使用。</p>
-<p><a href="https://www.conoha.jp/referral/?token=3WIDFgxrG6MsHRBJ7V_EI4GqOsP4UzCf.4cY9isnERXyDas77FQ-9LZ" target="_blank" rel="external">购买vps地址</a><br>点击右上角申请注册等步骤，这些谁都会的就不介绍了，但是要注意，密码貌似需要有<strong>标点符号！！！</strong></p>
-<p>#注册</p>
-<p><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/1.png?raw=true" width="1000" height="350/"><br>点击右上角<code>申请</code>，出现登录账号的界面，其实这也是注册的界面，直接输入<code>邮箱</code>和<code>密码</code>。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/2.png?raw=true" width="1000" height="450/"><br>接下来选择<code>短信验证</code>，和普通的验证一样，就不多说了。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/3.png?raw=true" width="1000" height="550/"><br>然后填写信息，随便填填就好了。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/4.png?raw=true" width="1000" height="550/"><br>选择<code>Conoha CHarge</code>，里面可以选择支付宝支付。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/5.png?raw=true" width="1000" height="250/"><br>充值金额建议充<code>2000日元</code>，大概100人民币吧，然后选择支付宝，点击<code>前往支付宝</code>，之后的大家都会吧。</p>
-<p>#创建服务器<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/6.png?raw=true" width="1000" height="300/"></p>
-<p>点击右上角<code>添加服务器</code>,只需换为<code>ubuntu</code>,输入<code>root密码</code>，最后点击<code>追加</code>即可创建成功。</p>
-<p>#登录服务器</p>
-<p>###windows系统<br>首先，我们先要连接上我们的vps,<code>windows</code>上可以下载<code>putty</code>，把我们获得的ip填入<code>Host Name</code>，点击<code>open</code>。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/12.png?raw=true" width="1000" height="500/"><br>弹出如下窗口，直接点击<code>是</code>。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/13.png?raw=true" width="1000" height="400/"><br>接着会出现终端窗口让你输入<code>login as</code>，输入<code>root</code>，然后<code>password</code>输入之前设置好的密码。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/14.jpg?raw=true" width="1000" height="400/"><br>如果出现下图显示，证明我们已经成功连接上vps了。</p>
-<p><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/15.png?raw=true" width="1000" height="300/"></p>
-<p>###mac系统<br>舍得花钱买mac开发的，代表你对技术的重视，配置了<code>ssh-key</code>这些就不说了，不配置也可以，只是要输入账号<code>root</code>和之前设置的<code>root密码</code>。<br>输入<code>ssh root@133.130.108.22</code>(你输入你vps的ip)，出现如下界面表示成功连接。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/10.png?raw=true" width="1000" height="700/"></p>
-<p>#搭建shadowsocks</p>
-<p>首先我们应该感谢shadowsocks的作者。<br><a href="https://github.com/shadowsocks/shadowsocks/wiki/Shadowsocks-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E" target="_blank" rel="external">作者教程</a></p>
-<blockquote>
-<p>apt-get install python-pip</p>
-</blockquote>
-<p>pip是一个以Python计算机程序语言写成的软件包管理系统，他可以安装和管理软件包。之后我们下载安装东西就方便了。<br>现在，我们执行这个命令，终端刷刷刷的开始下载，中间会询问你，输入yes后继续。但是最后出现了个失败的信息，如下图：<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/7.png?raw=true" width="1000" height="500/"><br>他要求我们执行<code>apt-get update</code>，输入后回车，完成更新后，再次执行<code>apt-get install python-pip</code>，这次很顺利的完成了安装。</p>
-<blockquote>
-<p>pip install shadowsocks</p>
-</blockquote>
-<p>接着我们用pip来安装shadowsocks，执行<code>pip install shadowsocks</code>，出现如下信息，代表我们成功安装了shadowsocks。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/8.png?raw=true" width="1000" height="500/"></p>
-<blockquote>
-<p>sudo ssserver -p 443 -k password -m rc4-md5 –user nobody -d start</p>
-</blockquote>
-<p>接着我们要让我们的shadowsocks在vps的后台跑起来，要执行<code>sudo ssserver -p 443 -k password -m rc4-md5 --user nobody -d start</code>，<strong>注意</strong>password是你要设定的密码，443为端口号，rc4-md5为加密方式，除了密码，其余的都可以不用改，出现如下信息为成功开启。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/9.png?raw=true" width="1000" height="500/"></p>
-<p>#设置客户端</p>
-<p>###windows系统<br><a href="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/Shadowsocks-win-2.5.6.zip?raw=true" target="_blank" rel="external">windows客户端</a></p>
-<p>点击打开客户端，输入我们搭建shadowsocks时输入的参数，包括vps的ip、端口号<code>443</code>、密码，加密方式<code>rc4-md5</code>，代理端口为<code>1080</code>不用改。如果你全部按照我的教程来的话，只有你自己设置的密码才需要和我不一样。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/16.png?raw=true" width="1000" height="400/"><br>接着右键屏幕右下角shadowsocks客户端的小图标，点击<code>启用系统代理</code>，现在我们在浏览器用谷歌搜索，已经能用了！不够我们还需要设置一些东西，访问我们国内的网站，就不必经过shadowsocks了，所以我们右键小图标，在<code>系统代理模式</code>中选择<code>PAC模式</code>，在<code>PAC</code>中选择<code>使用本地PAC</code>并点击<code>从GFWList更新本地PAC</code>，现在，我们就能愉快的上谷歌了！</p>
-<p>###mac系统<br><a href="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/ShadowsocksX-2.6.3.dmg?raw=true" target="_blank" rel="external">mac客户端</a><br>点击打开客户端，点击右上角shadowsocks，在服务器中打开服务器设定，输入我们搭建shadowsocks时输入的参数，包括vps的ip、端口号<code>443</code>、密码，加密方式<code>rc4-md5</code>。如果你全部按照我的教程来的话，只有你自己设置的密码才需要和我不一样。<br><img src="https://github.com/fflamingogo/fflamingogo.github.io/blob/master/myimage/17.png?raw=true" width="1000" height="400/"><br>选择<code>自动代理模式</code>，点击<code>从GFWList更新本地PAC</code>然后<code>打开shadowsocks</code>，完成设置。</p>
-<p>#总结</p>
-<p>恭喜你，通过以上的步骤，你已经搭建起了通往世界的大门，如果觉得我的教程帮助了你，你可以拿起你的手机扫一扫二维码。</p>
-<p><img src="https://raw.githubusercontent.com/fflamingogo/fflamingogo.github.io/master/myimage/wx.jpg" width="300" height="300" alt="图片名称" align="center/"></p>
-<p><img src="https://raw.githubusercontent.com/fflamingogo/fflamingogo.github.io/master/myimage/%E6%94%AF%E4%BB%98%E5%AE%9D.jpg" width="300" height="300" alt="图片名称" align="center/"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>作为Android开发工程师，你是不是有以下的经历：</p>
-<ul>
-<li>无法访问谷歌</li>
-<li>无法访问Android官网</li>
-<li>Android studio更新各种失败</li>
-<li>导入谷歌的库各种失败</li>
-</ul>
-<p>一切原因都是你身处大局域网中，你可能通过某种方法，暂时解决了以上的问题，但是还是很不顺心，这里，我不单要帮你解决以上的问题，还要带你看看世界。</p>]]>
-    
-    </summary>
-    
-  </entry>
   
   <entry>
     <title><![CDATA[getChildMeasureSpec源码分析]]></title>
